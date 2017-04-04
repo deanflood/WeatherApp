@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.adminibm.weatherapp.MainActivity">
+
+    <Spinner
+        android:id="@+id/cityspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp" />
+
+    <TextView
+        android:id="@+id/temperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cityspinner"
+        android:layout_below="@+id/cityspinner"
+        />
+
+   <ImageView
+    android:id="@+id/conditionsImageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/temperatureTextView"
+    android:layout_alignTop="@+id/temperatureTextView"
+    android:layout_marginTop="22dp"
+    app:srcCompat="@android:drawable/btn_star_big_on"
+       android:maxHeight="2500px"
+       android:maxWidth="250px"
+       android:adjustViewBounds="true"
+
+       />
+</RelativeLayout>
